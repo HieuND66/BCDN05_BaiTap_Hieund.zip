@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript B1</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background: #0f2027;">
+
+  
+<div class="container">
+  <div class="box">
+    <div class="inner">
+      <span>JAVASCIPT</span>
+    </div>
+    <div class="inner">
+      <span>JAVASCIPT</span>
+    </div>
+  </div>
+
+<!-- Bài 1 -->
+  <div class="hw hw1">
+    <div class="header">
+      <h4 class="title">Bài 1: Quy đổi tiền tệ</h4>
+    </div>
+    <div class="form_input">
+      <input type="text" class="form__input" id="input_1" placeholder="Vui lòng nhập số tiền(USD)">
+      <label for="input_1" class="form__label">Vui lòng nhập số tiền(USD)</label>
+      <button  onclick="changePrice()" class="btn-hover color-10" >BUTTON</button>
+    </div>
+    <div class="form_output">
+   
+      <span class="title_output">Số tiền sau khi quy đổi từ USD --> VNĐ : <span id="content_output"></span></span>
+    </div>
+   
+  </div>
+  <!-- Bài 2 -->
+  <div class="hw hw2">
+    <div class="header">
+      <h4 class="title">Bài 2: Tính diện tích và chu vi hình chữ nhật</h4>
+    </div>
+    <div class="form_input">
+      <div class="input_wrap">
+        <div class="input_wrap_section">
+          <input type="text" class="form__input" id="input_dai" placeholder="Vui lòng nhập chiều dài">
+          <label for="input_dai" class="form__label">Vui lòng nhập chiều dài</label>
+        </div>
+    <div class="input_wrap_section">
+      <input type="text" class="form__input" id="input_rong" placeholder="Vui lòng nhập chiều rộng">
+      <label for="input_rong" class="form__label">Vui lòng nhập chiều rộng</label>
+    </div>
+       
+      </div>
+     
+      <button  onclick=" getOutput()" class="btn-hover color-10" >BUTTON</button>
+    </div>
+    <div class="form_output">
+      <span class="title_output">Diện tích hình chữ nhật là: <span id="content_output-1"></span></span>
+      <span class="title_output" style="padding-top: 20px;"><br>Chu vi hình chữ nhật là: <span id="content_output-2"></span></span>
+    </div>
+   
+  </div>
+  <!-- Bài 3 -->
+  <div class="hw hw3">
+    <div class="header">
+      <h4 class="title">Bài 3: Tính tổng 2 ký số vừa nhập</h4>
+    </div>
+    <div class="form_input">
+      
+      <input type="text" class="form__input" id="input_b3" placeholder="Nhập vào 1 số có 2 chữ số">
+      <label for="input_b3" class="form__label">Nhập vào 1 số có 2 chữ số</label>
+      <button  onclick="sum()" class="btn-hover color-10" >BUTTON</button>
+    </div>
+    <div class="form_output">
+   
+      <span class="title_output">Tổng 2 ký số vừa nhập là : <span id="content_output-3"></span></span>
+    </div>
+   
+  </div>
+    
+  </div>
+</div>
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
