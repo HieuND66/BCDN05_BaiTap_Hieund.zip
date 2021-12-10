@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascipt -b3</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1 id="text3d">JAVSCIPT</h1>
+  <div class="container my-5 ml-5">
+    <!-- bai 1 Xuất 3 số theo thứ tự tăng dần -->
+    <div class="py-5">
+        <form>
+            <h3 class="card-title">Bài 1: Xuất 3 số theo thứ tự tăng dần</h3>
+            <p class="card-text"> Mời nhập 3 số nguyên</p>
+            <div class="form-group d-flex">
+              <input placeholder="Num 1" type="number" class="form-control mr-2 w-auto" id="inpNum1">
+              <input placeholder="Num 2" type="number" class="form-control mr-2 w-auto" id="inpNum2">
+              <input placeholder="Num 3" type="number" class="form-control w-auto" id="inpNum3">
+            </div>
+            <div class="form-group">
+              </div>
+            <button onclick="sortNumber()" type="button" class="btn btn-success">Sắp Xếp</button>
+        </form>
+        <p id="txtMax" class="alert alert-success my-2 w-25"></p>
+    </div>
+
+
+    <!-- bài 2 Chào hỏi -->
+    <div class="b2">
+      <h3 class="card-title">Bài 2: Chương trình Chào hỏi các thành viên trong gia đình</h3>
+
+      <div class="card" style="width: 18rem;">
+       
+          <div class="card-header text-white bg-success text-center">
+              Chào Hỏi
+          </div>
+          <div class="card-body">
+              <form>                 
+                  <div class="form-group">
+                      <label for="">Bạn muốn gửi lời chào tới ?</label>
+                      
+                      <select class="form-control" id="select">
+  
+                          <option>--Chọn Thành viên--</option>
+                          <option value="B">Bố</option>
+                          <option value="M">Mẹ</option>
+                          <option value="AT">Anh Trai</option>
+                          <option value="EG">Em Gái</option>
+                      </select>
+                  </div>
+                  
+                  <button onclick="sendMessage()" type="button" class="btn btn-success" id="btnCalc">Gửi Lời Chào</button>
+                  <p class="mt-2" id="hello"></p>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- bài 3 Đếm Số Chẵn Lẻ -->
+    <div class="py-5">
+        <form>
+            <h2 class="card-title">Bài 3: Đếm Số Chẵn Lẽ</h2>
+            <p class="card-text"> Mời nhập 3 số nguyên</p>
+            <div class="form-group d-flex">
+              <input placeholder="Nhập số thứ 1" type="number" class="form-control mr-2 w-auto" id="soThu1">
+              <input placeholder="Nhập số thứ 2" type="number" class="form-control mr-2 w-auto" id="soThu2">
+              <input placeholder="Nhập số thứ 3" type="number" class="form-control w-auto" id="soThu3">
+            </div>
+            <div class="form-group">
+              </div>
+            <button onclick="timChanLe()" type="button" class="btn btn-success">Đếm</button>
+        </form>
+        <p id="soLuongChanLe" class="alert alert-success my-2 w-25"></p>
+    </div>
+
+
+    <div class="py-5">
+        <form>
+            <h3 class="card-title">Bài 4: Đoán hình tam giác</h3>
+            <p> Mời nhập độ dài 3 cạnh</p>
+            <div class="form-group d-flex">
+              <input placeholder="Cạnh thứ 1" type="number" class="form-control mr-2 w-auto" id="canh1">
+              <input placeholder="Cạnh thứ 2" type="number" class="form-control mr-2 w-auto" id="canh2">
+              <input placeholder="Cạnh thứ 3" type="number" class="form-control w-auto" id="canh3">
+            </div>
+            <div class="form-group">
+              </div>
+            <button onclick="timTamGiac()" type="button" class="btn btn-success">Dự Đoán</button>
+        </form>
+        <p id="txtText" class="alert alert-success my-2 w-25"></p>
+    </div>
+</div>
+
+
+
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>
