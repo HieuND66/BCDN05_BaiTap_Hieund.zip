@@ -15,6 +15,7 @@
  *Khối 3:
  *total và kết quả đậu hay rớt
 */
+
 function tuyenSinh() {
   var diemChuan = Number(document.getElementById('inpScores').value);
   var mon1 = Number(document.getElementById('inpScores1').value);
