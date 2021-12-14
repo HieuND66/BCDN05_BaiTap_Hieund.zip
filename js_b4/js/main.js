@@ -36,7 +36,6 @@ function tuyenSinh() {
     if (total >= diemChuan) {
       text.classList.remove("alert-danger");
       document.getElementById('txtResult').innerHTML = ' Bạn đã đậu. tổng điểm : ' + total;
-
     } else {
       text.classList.add("alert-danger");
       document.getElementById('txtResult').innerHTML = ' Bạn đã rớt. tổng điểm : ' + total;

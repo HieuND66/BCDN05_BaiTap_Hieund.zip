@@ -179,11 +179,9 @@ input[type=radio]:checked ~ .check {
 input[type=radio]:checked ~ .check::before{
   background: #6f0485;
 }
-
 input[type=radio]:checked ~ label{
   color: #6f0485;
 }
-
 .type {
   float: left ;
 }
